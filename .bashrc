@@ -31,15 +31,14 @@ export EDITOR="VIM"
 
 # Aliases
 alias pacman='sudo pacman'
-alias svim='sudo vim'
-alias uppc='sudo pacman -Syu'
-alias p='pacman '
-alias pR='pacman -Rs $(pacman -Qqtd)'
-alias find='sudo find / -name'
-alias peQ='p -Qqet'
-alias peR='p -Qqdt'
+alias svim='sudo vim'                    
+alias uppc='sudo pacman -Syu'            # Archlinux command to upgrade system, packages, tree
+alias p='pacman '                        # Archlinux 
+alias pR='pacman -Rs $(pacman -Qqtd)'    # Archlinux command to find orphans 
+alias find='sudo find / -name'           
 
-# Alias corrections
+# Alias corrections (ARCHLINUX ONLY)
+
 alias pacan='pacman'
 alias ppacan='pacman'
 alias paacan='pacman'
