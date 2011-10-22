@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/flynn/.config/spotify'
+let g:netrw_dirhist_2='/home/flynn/msanders-snipmate.vim-f5a75d0'
+let g:netrw_dirhist_3='/home/flynn/Arbete'
+let g:netrw_dirhist_4='/home/flynn/derp'
+let g:netrw_dirhist_5='/home/flynn/.fluxbox/styles'
+let g:netrw_dirhist_6='/home/flynn/Settings-Configurations/.fluxbox'
