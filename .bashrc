@@ -30,32 +30,32 @@ export EDITOR="VIM"
 
 
 # Aliases
-alias pacman='sudo pacman'
+#alias pacman='sudo pacman'               # Archlinux
 alias svim='sudo vim'                    
-alias uppc='sudo pacman -Syu'            # Archlinux command to upgrade system, packages, tree
-alias p='pacman '                        # Archlinux 
-alias pR='pacman -Rs $(pacman -Qqtd)'    # Archlinux command to find orphans 
+#alias uppc='sudo pacman -Syu'            # Archlinux command to upgrade system, packages, tree
+#alias p='pacman '                        # Archlinux 
+#alias pR='pacman -Rs $(pacman -Qqtd)'    # Archlinux command to find orphans 
 alias find='sudo find / -name'           
 
 # Alias corrections (ARCHLINUX ONLY)
 
-alias pacan='pacman'
-alias ppacan='pacman'
-alias paacan='pacman'
-alias paccan='pacman'
-alias pacaan='pacman'
-alias pacann='pacman'
-alias pacma='pacman'
-alias pacmn='pacman'
-alias paman='pacman'
-alias pcman='pacman'
-alias acman='pacman'
-alias pamcan='pacman'
-alias pacmna='pacman'
-alias pacamn='pacman'
-alias paacmn='pacman'
-alias apcman='pacman'
-alias paacmn='pacman'
+#alias pacan='pacman'
+#alias ppacan='pacman'
+#alias paacan='pacman'
+#alias paccan='pacman'
+#alias pacaan='pacman'
+#alias pacann='pacman'
+#alias pacma='pacman'
+#alias pacmn='pacman'
+#alias paman='pacman'
+#alias pcman='pacman'
+#alias acman='pacman'
+#alias pamcan='pacman'
+#alias pacmna='pacman'
+#alias pacamn='pacman'
+#alias paacmn='pacman'
+#alias apcman='pacman'
+#alias paacmn='pacman'
 
 
 
