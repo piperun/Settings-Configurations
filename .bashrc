@@ -8,7 +8,7 @@
 [[ $- != *i* ]] && return
 
 
-
+GROUP=$(groups)
 OS=$(uname -o)
 case $OS in
      *'BSD')
@@ -92,6 +92,31 @@ alias find='sudo find / -name'
 case $distro in
 	'FreeBSD')
 
+  if [ ! -f /etc/inputrc];
+   then
+    if [ $GROUP != "wheel" ];
+      then
+        echo "You need to login either as root or a privileged user"
+      elif which sudo >/dev/null 2>&1; then
+         sudo
+              echo "\"\e[1~\": beginning-of-line
+                   \"\e[4~\": end-of-line
+                   \"\e[3~\": delete-char #delete
+                   \"\eOd\": backward-word #ctl-leftarrow
+                   \"\eOc\": forward-word #ctl-rightarrow" >> /etc/inputrc
+      else
+         echo "Please write your root password"
+          su
+          echo "\"\e[1~\": beginning-of-line
+               \"\e[4~\": end-of-line
+               \"\e[3~\": delete-char #delete
+               \"\eOd\": backward-word #ctl-leftarrow
+               \"\eOc\": forward-word #ctl-rightarrow" >> /etc/inputrc
+          exit
+      fi    
+   fi
+
+
 # Aliases
 alias fbsdufetch='freebsd-update fetch'
 alias fbsdu='freebsd-update'
@@ -103,6 +128,7 @@ alias mke='make'
 alias mae='make'
 alias mak='make'
 alias ake='make'
+
 
 # freebsd-update
 alias reebsd-update='freebsd-update'
