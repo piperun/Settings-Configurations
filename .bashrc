@@ -209,4 +209,6 @@ alias paacmn='pacman'
     ;;
 
 
+# Debian
 
+alias purgepkgs='dpkg --get-selections | grep deinstall | awk '{print $1}' | xargs sudo apt-get --dry-run purge'
