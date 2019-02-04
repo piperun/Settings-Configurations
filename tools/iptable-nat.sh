@@ -10,3 +10,7 @@ PORT=80 PUBLIC_IP=192.168.190.141 CONTAINER_IP=10.186.145.3 NIC=ens33 \
 
 # Remove 
 iptables -t nat -D PREROUTING
+
+
+# List
+iptables -t nat -L --line-numbers
