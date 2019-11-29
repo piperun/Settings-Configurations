@@ -9,18 +9,18 @@ import threading
 
 tl = Timeloop()
 
-#@tl.job(interval=timedelta(seconds=1))
+@tl.job(interval=timedelta(seconds=3))
 def moveMizuki():
     xdo = Xdo()
     xdo.move_mouse(535, 520)
     print("moved Mizuki")
 
-@tl.job(interval=timedelta(seconds=2))
-def movePowerUp1():
-    xdo = Xdo()
-    xdo.move_mouse(955, 1060)
+#@tl.job(interval=timedelta(seconds=2))
+#def movePowerUp1():
+#    xdo = Xdo()
+#    xdo.move_mouse(955, 1060)
 
-@tl.job(interval=timedelta(seconds=3))
+@tl.job(interval=timedelta(seconds=1))
 def moveStadnard():
     xdo = Xdo()
     xdo.move_mouse(850, 850)
@@ -30,6 +30,7 @@ def moveStadnard():
 def clickloop(win_id, times):
     xdo = Xdo()
     
+    tl.start()
     t = threading.Event()
 
     while times == True:
@@ -39,12 +40,7 @@ def clickloop(win_id, times):
         xdo.mouse_up(win_id, 1)
         sleep(0.05)
 
-       # while not t.wait(2):
-       #     moveMizuki()
-
-
-
-
+ 
 
 
 def init():
